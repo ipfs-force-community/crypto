@@ -24,7 +24,7 @@ var precomputed = [10][16]byte{
 	{10, 8, 7, 1, 2, 4, 6, 5, 15, 9, 3, 13, 11, 14, 12, 0},
 }
 
-func hashBlocksGeneric(h *[8]uint32, c *[2]uint32, flag uint32, blocks []byte) {
+func hashBlocks(h *[8]uint32, c *[2]uint32, flag uint32, blocks []byte) {
 	var m [16]uint32
 	c0, c1 := c[0], c[1]
 
